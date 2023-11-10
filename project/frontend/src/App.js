@@ -8,9 +8,12 @@ import Forgot from './Forgot';
 import Signup from './Signup';
 
 
-import Sinch from './Sinch';
+//import Sinch from './Sinch';
 
 import './All.css';
+import './Home.css';
+import './Contact.css';
+import './Main.css';
 import Journal from './components/Journal';
 
 function App() {
@@ -21,7 +24,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgot" element={<Forgot />} />
-        <Route path="/home" element={<Sinch />} />
+       <Route path="/home" element={<Home />} />
+       <Route path="/contact" element={<Contact />} />
+       <Route path="/main" element={<Main />} />
         <Route path="/journal" element={<Journal />} />
       </Routes>
     </Router>
